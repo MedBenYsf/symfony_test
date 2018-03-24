@@ -1,0 +1,6 @@
+<h1>{{ events|length}} Events</h1>
+<ul>
+	{% for event in events %}
+		<li>{{ event.name }}</li>
+	{% endfor %}
+</ul>
