@@ -46,16 +46,6 @@ class EventControllerTest extends WebTestCase
 	/**
 	*@test
 	*/
-	public function shouldtrye()
-	{
-		$this->assertTrue(true);
-
-	}
-	
-
-	/**
-	*@test
-	*/
 	public function shouldTrue()
 	{
 		$this->assertTrue(true);
