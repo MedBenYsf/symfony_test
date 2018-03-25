@@ -13,11 +13,20 @@ class EventController extends AbstractController
 	/**
 	*@Route("/events", name="events_list")
 	*/
-	public function index()
+	public function indexAction()
 	{
 		$events = $this->getDoctrine()->getManager()->getRepository(Event::class)->findAll();
 
 		return $this->render('events/index.html.twig', compact('events'));
+	}
+
+	/**
+	*@Route("/events/{id}", name="event_details")
+	*/
+	public function showAction(Event $event)
+	{
+
+		return $this->render('events/show.html.twig', compact('event'));
 	}
 	
 	
