@@ -42,6 +42,7 @@ class EventControllerTest extends WebTestCase
 			 ;
 
 	}
+	
 
 	/**
 	*@test
