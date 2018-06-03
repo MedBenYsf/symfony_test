@@ -15,10 +15,11 @@ class EventController extends AbstractController
 	*/
 	public function indexAction()
 	{
-		$events = $this->getDoctrine()
-		->getManager()
-		->getRepository(Event::class)
-		->findAll();
+		$events = $this
+					->getDoctrine()
+					->getManager()
+					->getRepository(Event::class)
+					->findAll();
 
 		return $this->render('events/index.html.twig', compact('events'));
 	}
