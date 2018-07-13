@@ -13,7 +13,6 @@ class EventControllerTest extends WebTestCase
 	*/
 	public function index_should_show_all_events()
 	{
-		
 		$event1 = new Event();
 		$event1->setName('Symfony conference');
 		$event1->setLocation('Paris, FR');
