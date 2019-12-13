@@ -15,8 +15,7 @@ class EventController extends AbstractController
 	*/
 	public function indexAction()
 	{
-		$events = $this
-					->getDoctrine()
+		$events = $this->getDoctrine()
 					->getManager()
 					->getRepository(Event::class)
 					->findAll();
